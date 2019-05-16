@@ -112,21 +112,20 @@ body{
 .my-photo img{
 	position: relative;
 	width: 100%;
-
-
 }
 
 nav{
 	z-index:90 !important ;
 	background: black;
-	height: 15vh;	
+	height: 15vh;
+	min-height: 35px;	
 }
 
 .navbar a, #logo g{
 	color: white;
 	fill: #ffc107;
 }
-.navbar a:hover{
+.navbar a:hover, .active a{
 	color: #ffc107;
 	
 }
@@ -172,7 +171,29 @@ header p:last-child{
 	font-weight: bold;
 	font-style: italic;
 }
-
+footer{
+	background: black;
+	color: white;
+	
+}
+#social svg{
+	margin: 3vh;
+	width:1.5vw;
+	fill:white;
+	
+}
+#social a:hover  path{
+	fill:#ffc107;
+}
+.border-top-dotted{
+ border-top: 2px dashed #000000;
+  background:
+   linear-gradient(#000000,#000000) padding-box,
+   linear-gradient(to right, #ffc107, #fff 50%, #ffc107) border-box;
+  
+ 
+	
+}
 @media only screen and (max-width: 768px) {
 	#welcome-text{
 	font-size: 6vw;

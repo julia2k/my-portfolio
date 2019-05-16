@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#welcome-animation').css("display","block");
+
 });
 var text = $("#welcome-text").text();
 var chars= text.split("");
@@ -42,3 +43,7 @@ function closeWelcomePage(){
     $('#wrapper').css("display","block");
 	
 }
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // newly activated tab
+  e.relatedTarget // previous active tab
+})

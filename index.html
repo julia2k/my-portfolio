@@ -10,7 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	
 	<div id="main-foto" >
 		<div id="welcome-animation">
@@ -152,15 +152,15 @@
 		 		</a>
 		 
 				<div class="collapse navbar-collapse " id="navbarNav">
-				    <ul class="navbar-nav ml-auto ">
-				    	<li class="nav-item active mr-5 ">
-				        	<a class="nav-link " href="#hello-block">About</a>
+				    <ul class="navbar-nav ml-auto nav-tabs" id="myTab" role="tablist">
+				    	<li class="nav-item  mr-5 ">
+				        	<a class="nav-link active" data-toggle="tab" href="#hello-block" role="tab" aria-controls="hello-block" aria-selected="true">About</a>
 				      	</li>
 					     <li class="nav-item mr-5">
-					        <a class="nav-link" href="#works">Works</a>
+					        <a class="nav-link" data-toggle="tab" href="#works" role="tab" aria-controls="works" aria-selected="false">Works</a>
 					    </li>
 				      	<li class="nav-item mr-5">
-				        	<a class="nav-link" href="#">Contacts</a>
+				        	<a class="nav-link" data-toggle="tab" href="#" role="tab" aria-controls="contacts" aria-selected="false">Contacts</a>
 				      	</li>
 				     
 				    </ul>
@@ -178,64 +178,136 @@
 				</div>
 			</div>
 
-			<div id="works" class="row ">
-				<div class="col-12 text-uppercase"> <h2>my works</h2></div>
-					<div class="col-md-4 ">
-						<div class="border m-1 p-3">
+			<div id="works" >
+				<div class="row text-uppercase"> <h2>my works</h2></div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="border m-1 p-3 h-100 ">
 							<img src="img/mochup_site_from_psd.png" alt="">
-							<h3>Website from psd</h3>
+							<h3 class="my-3">Website from psd</h3>
 							<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
 							<p>I made this site to practice in creation site from psd maket </p>
-							<div class=" flex-row text-center">
-								
-									<a class="btn btn-outline-warning" role="button" href="https://sitefrompsd.netlify.com/" target="_blank">View</a>
-								
-								
-									<button type="button"  class="btn btn-outline-warning " onclick="window.open('Website_from_psd.psd')">Download PSD</button>
-								
-							</div>
-							
-							
+							<div class=" flex-row text-center ">
+								<a class="btn btn-outline-warning" role="button" href="https://sitefrompsd.netlify.com/" target="_blank">View</a>
+								<button type="button"  class="btn btn-outline-warning " onclick="window.open('Website_from_psd.psd')">Download PSD</button>
+							</div>	
 						</div>
 					</div>
 				
-				<div class="col-md-4 ">
-					<div class="border m-1 p-3">
-						<img src="img/mochup_diamond_shop1.png" alt="">
-						<h3>Watch Shop</h3>
+					<div class="col-md-4 ">
+						<div class="border m-1 p-3 h-100">
+							<img src="img/mochup_diamond_shop1.png" alt="">
+							<h3 class="my-3">Watch Shop</h3>
 							<p> <strong> Tools:</strong> HTML,CSS,JavaScript</p>
 							<p>I made this project when I was learning JavaScript</p>
 							<p>responsive basket and navigation</p>
-							<a class="btn btn-outline-warning" role="button" href="https://watch-shop.netlify.com/" target="_blank">View</a>
+							<div class=" flex-row text-center">
+								<a class="btn btn-outline-warning" role="button" href="https://watch-shop.netlify.com/" target="_blank">View</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 ">
-					<div class="border m-1 p-3">
-						<img src="img/mochup_site_from_psd.png" alt="">
-						<h3>The site from psd</h3>
+
+					<div class="col-md-4 ">
+						<div class="border m-1 p-3 h-100">
+							<img src="img/mochup_landing_the_Band.png" alt="">
+							<h3 class="my-3">Landing Page from PSD</h3>
 							<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
 							<p>I made this site to practice in creation site from psd maket </p>
-							<a class="btn btn-outline-warning" role="button" href="https://julia2k.github.io/sait-from-psd.github.io/" target="_blank">View</a>
+							<div class=" flex-row text-center">
+								<a class="btn btn-outline-warning" role="button" href="https://landingband.netlify.com/" target="_blank">View</a>
+								<button type="button"  class="btn btn-outline-warning " onclick="window.open('band-website-design.psd')">Download PSD</button>
+							</div>	
+						</div>
 					</div>
 				</div>
-			
-			</div>	
-
-			
-	
-			
-		<div class="container">
-			<div class="row">
+				<div class="row my-4">
+					<div class="col-md-4">
+						<div class="border m-1 p-3 h-100">
+							<img src="img/mochup_site_from_psd.png" alt="">
+							<h3 class="my-3">Website from psd</h3>
+							<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
+							<p>I made this site to practice in creation site from psd maket </p>
+							<div class=" flex-row text-center">
+								<a class="btn btn-outline-warning" role="button" href="https://sitefrompsd.netlify.com/" target="_blank">View</a>
+								<button type="button"  class="btn btn-outline-warning " onclick="window.open('Website_from_psd.psd')">Download PSD</button>
+							</div>	
+						</div>
+					</div>
 				
+					<div class="col-md-4 ">
+						<div class="border m-1 p-3 h-100">
+							<img src="img/mochup_diamond_shop1.png" alt="">
+							<h3 class="my-3">Watch Shop</h3>
+							<p> <strong> Tools:</strong> HTML,CSS,JavaScript</p>
+							<p>I made this project when I was learning JavaScript</p>
+							<p>responsive basket and navigation</p>
+							<div class="flex-row text-center">
+								<a class="btn btn-outline-warning" role="button" href="https://watch-shop.netlify.com/" target="_blank">View</a>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-md-4 ">
+						<div class="border m-1 p-3 h-100">
+							<img src="img/mochup_landing_the_Band.png" alt="">
+							<h3 class="my-3">Landing Page from PSD</h3>
+							<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
+							<p>I made this site to practice in creation site from psd maket </p>
+							<div class=" flex-row text-center">
+								<a class="btn btn-outline-warning" role="button" href="https://landingband.netlify.com/" target="_blank">View</a>
+								<button type="button"  class="btn btn-outline-warning " onclick="window.open('band-website-design.psd')">Download PSD</button>
+							</div>	
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-				
-			</div>
+
+
+		</div>	
+	</div>	
+	<footer>
+		<div id="social" class="row ">
+			<ul class="list-inline mx-auto mb-0 ">
+				<li class="list-inline-item" >
+					<a href="https://www.linkedin.com/in/julia2k" target="_blank" title="LinkedIn">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg>
+						</svg>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://www.facebook.com/julia.kutepova.7" target="_blank" title="facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1"  version="1.1" viewBox="0 0 512 512" xml:space="preserve"><path class="st0" d="M366,172.6h-74.9v-49.1c0-18.5,12.2-22.8,20.8-22.8c8.6,0,52.9,0,52.9,0V19.6L292,19.3  c-80.8,0-99.2,60.5-99.2,99.2v54.1H146v83.6h46.7c0,107.3,0,236.5,0,236.5h98.3c0,0,0-130.5,0-236.5h66.3L366,172.6z"/></svg>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://github.com/julia2k" target="_blank" title="GitHub">
+						<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1792 1792" ><path d="M1664 896q0 251-146.5 451.5t-378.5 277.5q-27 5-39.5-7t-12.5-30v-211q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 89t.5 54q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="https://codepen.io/julia2k/" target="_blank" title="CodePen">
+						<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1792 1792"><path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/></svg>
+						
+					</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="mailto:yuliana.kutepova@gmail.com" title="Send email">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 330.001 330.001"  xml:space="preserve">
+								<path id="XMLID_20_" d="M165.001,0c-90.981,0-165,74.018-165,164.997c0,90.983,74.019,165.004,165,165.004c8.284,0,15-6.716,15-15  c0-8.284-6.716-15-15-15c-74.44,0-135-60.563-135-135.004C30,90.56,90.561,30,165.001,30s135,60.56,135,134.997v37.507  c0,12.407-10.096,22.5-22.504,22.5c-12.406,0-22.499-10.093-22.499-22.5v-37.507c0-49.626-40.372-90-89.997-90  c-49.626,0-89.999,40.374-89.999,90c0,49.63,40.373,90.007,89.999,90.007c25.927,0,49.323-11.026,65.762-28.63  c8.706,16.978,26.379,28.63,46.734,28.63c28.951,0,52.504-23.551,52.504-52.5v-37.507C330,74.018,255.982,0,165.001,0z   M165.001,225.004c-33.084,0-59.999-26.919-59.999-60.007c0-33.084,26.915-60,59.999-60c33.083,0,59.997,26.916,59.997,60  C224.998,198.085,198.083,225.004,165.001,225.004z"/>
+							</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			
+				<p class="mx-auto  border-top-dotted pt-2">	&#169; Yuliana Kutepova</p>
+			
 			
 		</div>
-	</div>
-</div>
+
+	</footer>
+
 <script src="script.js"></script>	
 </body>
 </html>
