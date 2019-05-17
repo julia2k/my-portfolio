@@ -121,13 +121,17 @@ nav{
 	min-height: 35px;	
 }
 
-.navbar a, #logo g{
+.navbar a,
+#logo g{
 	color: white;
 	fill: #ffc107;
 }
-.navbar a:hover, .active a{
+.navbar a:hover{
 	color: #ffc107;
 	
+}
+.a-link{
+	color:#ffc107 !important;
 }
 .navbar a:hover path{
 	fill:white;
