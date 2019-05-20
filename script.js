@@ -14,7 +14,6 @@ chars.forEach(function (char){
 		$("#welcome-text").append("<div class='split-char'>" + char);	
 	}
  });
-//var split = $("#welcome-text");
 var splitChar=$(".split-char");
 
 function random(min, max){
@@ -44,20 +43,19 @@ function closeWelcomePage(){
 }
 
 // active link color setup
-
 function setLinkActive(elem){
    $("a.a-link").removeClass("a-link");
    $(elem).addClass('a-link'); 
 }
-
+// page animation on scroll
 function scrollAnimate(elem){
    var link_href=$(elem).attr("href");
    if ( link_href == "#my-works"){
-     $("html").animate({ scrollTop: $(window).height() - $("nav").height()-50 }, "slow");
+     $("html").animate({ scrollTop: $(window).height() - $("nav").height()-50 }, 700);
    } else if(link_href == "#hello-block"){
-   	 $("html").animate({ scrollTop: $('#hello-block').offset().top -10 }, "slow");
+   	 $("html").animate({ scrollTop: $('#hello-block').offset().top -10 }, 700);
    } else{
-   	$("html").animate({ scrollTop: $('#social').offset().top -$(window).height()+10 }, "slow");
+   	$("html").animate({ scrollTop: $('#social').offset().top}, 700);
    }
 }
 
@@ -68,7 +66,7 @@ $('a.nav-link').click(function () {
 });
 
 
-//navigation links activation on scroll
+//navigation links color activation on scroll
 $(document).on('scroll', function() {
 	 var window_top = $(window).scrollTop();
 	 var helloBlock_top = $('#hello-block').offset().top -10;
