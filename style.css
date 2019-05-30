@@ -258,9 +258,12 @@ footer{
 		color:black;
 		font-size: 15vw;
 	}
-	/*#welcome-button-close:after{
+	#welcome-button-close span{
+		display:none;
+	}
+	#welcome-button-close:after{
 		content: '\002BBF';
-	}*/	
+	}	
 
 	#signature{
 		width: 75vw;
