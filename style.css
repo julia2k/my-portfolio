@@ -273,13 +273,14 @@ footer{
 	}
 	#welcome-text{
 	font-size: 8vw;
-}
-
+	}
 	.split-char:nth-child(22){
     display: block;
-}
-#hello-block>div{
-	margin-left: 0 !important;
-}
-
+	}
+	#hello-block>div{
+		margin-left: 0 !important;
+	}
+	header{
+		margin-top: 20vh;
+	}
 }
