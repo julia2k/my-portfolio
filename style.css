@@ -278,5 +278,8 @@ footer{
 	.split-char:nth-child(22){
     display: block;
 }
+#hello-block>div{
+	margin-left: 0 !important;
+}
 
 }
