@@ -236,3 +236,9 @@ footer{
 		
 	}
 }*/
+@media only screen and (max-width: 450px) {
+	#welcome-button-close{
+		right: 10vw;
+	}	
+
+}
