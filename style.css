@@ -108,19 +108,19 @@ body{
 
 }
 
-#welcome-button-close-xs{
+/*#welcome-button-close-xs{
 	display:none;
 	position: absolute;
 	z-index: 100;
 	top: 3vh;
-	right: 3vw;
+	left: 44vw;
 	font-size: 12vw;
 	border: none;
 	outline:none;	
 	background: transparent;
 	 color: red;
 	 
-}
+}*/
 
 .my-photo img{
 	position: relative;
@@ -236,7 +236,7 @@ footer{
 	font-size: 10vw;
 	}
 }
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	#welcome-text{
 	font-size: 5vw;
 	margin-left: 4vw;
@@ -248,21 +248,27 @@ footer{
 		margin-left: 15vw;
 		
 	}
-}*/
+}
 @media only screen and (max-width: 450px) {
+	#main-foto{
+	padding-top: 28vh;
+}
 	#welcome-button-close{
-		display:none !important;
-	}	
-	#welcome-button-close-xs,
-	{
-		display:block;
+		right:45vw;
+		color:black;
+		font-size: 15vw;
 	}
+	/*#welcome-button-close:after{
+		content: '\002BBF';
+	}*/	
+
 	#signature{
-		width: 70vw;
+		width: 75vw;
+		margin-top: 5vh;
 		margin-left: 5vw;
 	}
 	#welcome-text{
-	font-size: 8vw;
+	font-size: 10vw;
 }
 
 	.split-char:nth-child(22){
