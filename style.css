@@ -251,10 +251,22 @@ footer{
 }*/
 @media only screen and (max-width: 450px) {
 	#welcome-button-close{
-		display:none;
+		display:none !important;
 	}	
-	#welcome-button-close-xs{
+	#welcome-button-close-xs,
+	{
 		display:block;
-	};
+	}
+	#signature{
+		width: 70vw;
+		margin-left: 5vw;
+	}
+	#welcome-text{
+	font-size: 8vw;
+}
+
+	.split-char:nth-child(22){
+    display: block;
+}
 
 }
