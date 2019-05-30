@@ -89,6 +89,7 @@ body{
 
 #welcome-button-close{
 	position: absolute;
+	z-index: 100;
 	overflow:hidden;
 	top: 1vh;
 	right: 1vw;
