@@ -254,15 +254,16 @@ footer{
 	padding-top: 28vh;
 }
 	#welcome-button-close{
-		right:45vw;
+		right:15vw;
 		color:black;
-		font-size: 15vw;
+		
 	}
 	#welcome-button-close span{
 		display:none;
 	}
 	#welcome-button-close:after{
-		content: '\000353';
+		content: '\002716';
+		font-size: 8vw;
 	}	
 
 	#signature{
