@@ -112,9 +112,9 @@ body{
 	display:none;
 	position: absolute;
 	z-index: 100;
-	bottom: 25vh;
-	left: 5vw;
-	font-size: 10vw;
+	top: 5vh;
+	right: 5vw;
+	font-size: 15vw;
 	border: none;
 	outline:none;	
 	background: transparent;
@@ -250,9 +250,6 @@ footer{
 	}
 }*/
 @media only screen and (max-width: 450px) {
-	#main-foto{
-		width: auto;
-	}
 	#welcome-button-close{
 		display:none;
 	}	
