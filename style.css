@@ -262,7 +262,7 @@ footer{
 		display:none;
 	}
 	#welcome-button-close:after{
-		content: '\002BBF';
+		content: '\000353';
 	}	
 
 	#signature{
