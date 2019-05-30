@@ -108,7 +108,19 @@ body{
 
 }
 
-
+#welcome-button-close-xs{
+	display:none;
+	position: absolute;
+	z-index: 100;
+	bottom: 5vh;
+	left: 5vw;
+	font-size: 3vw;
+	border: none;
+	outline:none;	
+	background: transparent;
+	 color: red;
+	 
+}
 
 .my-photo img{
 	position: relative;
@@ -239,7 +251,10 @@ footer{
 }*/
 @media only screen and (max-width: 450px) {
 	#welcome-button-close{
-		right: 10vw;
+		display:none;
 	}	
+	#welcome-button-close-xs{
+		display:block;
+	};
 
 }
