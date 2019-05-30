@@ -254,7 +254,7 @@ footer{
 	padding-top: 28vh;
 }
 	#welcome-button-close{
-		right:15vw;
+		right:5vw;
 		color:black;
 		
 	}
@@ -272,7 +272,7 @@ footer{
 		margin-left: 5vw;
 	}
 	#welcome-text{
-	font-size: 10vw;
+	font-size: 8vw;
 }
 
 	.split-char:nth-child(22){
