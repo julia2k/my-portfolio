@@ -112,9 +112,9 @@ body{
 	display:none;
 	position: absolute;
 	z-index: 100;
-	top: 5vh;
-	right: 5vw;
-	font-size: 15vw;
+	top: 3vh;
+	right: 3vw;
+	font-size: 12vw;
 	border: none;
 	outline:none;	
 	background: transparent;
