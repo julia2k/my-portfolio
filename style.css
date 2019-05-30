@@ -196,7 +196,10 @@ header p:last-child{
 .work-buttons{
 	flex: 0 1 auto;
 }
-
+.construction{
+	width:70%;
+	margin: 0 auto;
+}
 footer{
 	background: black;
 	color: white;
@@ -277,10 +280,7 @@ footer{
 	.split-char:nth-child(22){
     display: block;
 	}
-	#hello-block>div{
-		margin-left: 0 !important;
-	}
-	header{
+		header{
 		margin-top: 20vh;
 	}
 }
