@@ -50,10 +50,11 @@ function setLinkActive(elem){
 // page animation on scroll
 function scrollAnimate(elem){
    var link_href=$(elem).attr("href");
+   console.log(link_href);
    if ( link_href == "#my-works"){
-     $("html").animate({ scrollTop: $(window).height() - $("nav").height()-50 }, 700);
+     $("html").animate({ scrollTop: $(window).height() - $("nav").height()+150 }, 700);
    } else if(link_href == "#hello-block"){
-   	 $("html").animate({ scrollTop: $('#hello-block').offset().top -10 }, 700);
+   	 $("html").animate({ scrollTop: $('#hello-block').offset().top-200 }, 700);
    } else{
    	$("html").animate({ scrollTop: $('#social').offset().top}, 700);
    }
@@ -63,6 +64,12 @@ function scrollAnimate(elem){
 $('a.nav-link').click(function () {
    setLinkActive(this);
    scrollAnimate(this);
+   if ( $('a#burger-icon').hasClass("change") ){
+   	$("#navLinks").hide("blind", {direction: 'up'}, 500);
+   	$('a#burger-icon').removeClass("change");
+   }
+
+
 });
 
 
@@ -83,4 +90,14 @@ $(document).on('scroll', function() {
                 }
 });
 
+function burgerAnimation(x) {
+  x.classList.toggle("change");
+  if(x.classList.contains("change")){
+	$("#navLinks").show("blind", {direction: 'down'}, 1000);
+  	
+  }else{
 
+  	$("#navLinks").hide("blind", {direction: 'up'}, 1000);
+  }
+  
+}

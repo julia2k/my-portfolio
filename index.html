@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Yuliana Kutepova</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -130,129 +129,134 @@
 		</div>
 		<button id="welcome-button-close" onClick="closeWelcomePage()">
 			<span>&#11199;</span></button>
-		<!-- <button id="welcome-button-close-xs">&#x2716;</button> -->
+		
 	</div>
     <div id="wrapper">
-		
-			<nav class="navbar navbar-expand-sm fixed-top">
-				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-		 		<a class="navbar-brand ml-5" href="#">
-					<div id="logo" class=" d-flex flex-row">
-						<div class="mr-3" >
-							<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" xlink="http://www.w3.org/1999/xlink" viewBox="7.265999794006348 12.333000183105469 75.46800231933594 65.33399963378906">
-								<g >
-								  	<path d="M65.079 47.136H24.892l20.094-34.803 20.093 34.803zm-36.352-2.213h32.517L44.986 16.761 28.727 44.923z"></path>
-								    <path d="M47.453 77.667H7.266L27.36 42.864l20.093 34.803zm-36.352-2.214h32.517L27.36 47.291 11.101 75.453z"></path>
-								    <path d="M82.734 77.667H42.547l20.094-34.803 20.093 34.803zm-36.352-2.214h32.517L62.641 47.291 46.382 75.453z"></path>
-								</g>
-							</svg>
+
+
+			<nav class="navbar d-flex flex-row space-between flex-align-center">
+					<a class="navbar-brand" href="#">
+						<div id="logo" class="d-flex flex-row ml-5">
+							<div class="mr-3" >
+								<svg  xmlns="http://www.w3.org/2000/svg" version="1.1" xlink="http://www.w3.org/1999/xlink" viewBox="7.265999794006348 12.333000183105469 75.46800231933594 65.33399963378906">
+									<g >
+								  		<path d="M65.079 47.136H24.892l20.094-34.803 20.093 34.803zm-36.352-2.213h32.517L44.986 16.761 28.727 44.923z"></path>
+								    	<path d="M47.453 77.667H7.266L27.36 42.864l20.093 34.803zm-36.352-2.214h32.517L27.36 47.291 11.101 75.453z"></path>
+								    	<path d="M82.734 77.667H42.547l20.094-34.803 20.093 34.803zm-36.352-2.214h32.517L62.641 47.291 46.382 75.453z"></path>
+									</g>
+								</svg>
+							</div>
+							<div id="logo-name" class="pl-3 ">
+								<div>Yuliana Kutepova</div>
+								<div>web developer</div>
+							</div>
 						</div>
-						<div id="logo-name" class="pl-3">
-							<div>Yuliana Kutepova</div>
-							<div>web developer</div>
-						</div>
+					</a>
+					
+					<a href="javascript:void(0);" id="burger-icon" class="icon d-none d-xs-block burger" onclick="burgerAnimation(this)">
+					  	<div class="bar1"></div>
+					  	<div class="bar2"></div>
+					  	<div class="bar3"></div>
+					</a>
+					<div class="w-xs-100  d-xs-none d-block" id="navLinks">
+					    <ul class="d-flex flex-row" >
+					    	<li class="  mr-5">
+					        	<a class= "nav-link a-link"   href="#hello-block">About</a>
+					      	</li>
+						     <li class=" mr-5">
+						        <a  class="nav-link" href="#my-works">Works</a>
+						    </li>
+					      	<li class=" mr-5 ">
+					        	<a  class="nav-link" href="#social">Contacts</a>
+					      	</li>
+					    </ul>
+					    
 					</div>
-		 		</a>
-		 
-				<div class="collapse navbar-collapse" id="navbarNav">
-				    <ul class="navbar-nav ml-auto " >
-				    	<li class="nav-item  mr-md-5">
-				        	<a class="nav-link a-link"   href="#hello-block">About</a>
-				      	</li>
-					     <li class="nav-item mr-md-5">
-					        <a class="nav-link"  href="#my-works">Works</a>
-					    </li>
-				      	<li class="nav-item mr-md-5 ">
-				        	<a class="nav-link"  href="#social">Contacts</a>
-				      	</li>
-				    </ul>
-				</div>
+					
 			</nav>
 
 
 		<div class="container">	
-			<div  id="hello-block" class="navbar-expand  text-center">
+			<div  id="hello-block" >
 					<header>
-						<p id="hello-p" class="setlink">Hello, my name is Yuliana Kutepova.</p>
-
+						<p id="hello-p" class="">Hello, my name is Yuliana Kutepova.</p>
 						<p>I am web developer born in Lviv, living in Chicago. I am new in coding, but I learn fast, I'm always positive, I taught myself how to code and I learn something new every day.</p>	
 					</header>
-					<button type="button"  class="btn btn-outline-warning text-uppercase " onclick="window.open('YulianaKutepova.pdf')">resume</button>
+					<a  class="button-style" onclick="window.open('YulianaKutepova.pdf')">RESUME</a>
 				
 			</div>
 
 			<div id="works" >
-				<div class="row text-uppercase "> <h2 id="my-works" class="setlink">my works</h2></div>
+				<div class="row text-uppercase "> 
+					<h2 id="my-works" class="">my works</h2>
+				</div>
 
 
-				<div class="row">
-					<div class="col-md-4 ">
-						<div class="border m-1 p-3 h-100  d-flex flex-column justify-content-between align-items-stretch">
+				<div class="d-flex flex-row flex-wrap">
+					<div class="work-width">
+						<div class="border p-15 h-100 d-flex flex-column space-between">
 							<img src="img/mochup_site_from_psd.png" alt="">
-							<h3 class="my-3">Website from psd</h3>
+							<h3 class="my-3">From PSD to HTML</h3>
 							<div>
 								
-								<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
-								<p>I made this site to practice in creation site from psd maket </p>
+								<p> <strong> Tools:</strong> HTML, CSS, Bootstrap 4, Photoshop</p>
+								<p>My practice in creation responsive site from psd template. </p>
 							</div>
 							
-							<div class=" text-center">
-								<a class="btn btn-outline-warning" role="button" href="https://sitefrompsd.netlify.com/" target="_blank">View</a>
-								<button type="button"  class="btn btn-outline-warning " onclick="window.open('Website_from_psd.psd')">Download PSD</button>
+							<div class="text-center mY-15px">
+								<a class="button-style" href="https://sitefrompsd.netlify.com/" target="_blank">View</a>
+								<a class="button-style" onclick="window.open('Website_from_psd.psd')">Download PSD</a>
 							</div>	
 						</div>
 					</div>
 				
-					<div class="col-md-4 ">
-						<div class="border m-1 p-3 h-100 d-flex flex-column justify-content-between align-items-stretch">
+					<div class="work-width ">
+						<div class="border d-flex flex-column p-15 space-between">
 							<img src="img/mochup_diamond_shop1.png" alt="">
 							<h3 class="my-3">Watch Shop</h3>
 							<div>
-								
-								<p> <strong> Tools:</strong> HTML,CSS,JavaScript</p>
-								<p>I made this project when I was learning JavaScript</p>
-								<p>responsive basket and navigation</p>
+								<p> <strong> Tools:</strong> HTML, CSS, JavaScript</p>
+								<p>Responsive online store with Login/Register form and Cart
+								</p>
 							</div>
-							<div class="text-center">
-								<a class="btn btn-outline-warning" role="button" href="https://watch-shop.netlify.com/" target="_blank">View</a>
+							<div class="text-center mY-15px">
+								<a class="button-style" href="https://watch-shop.netlify.com/" target="_blank">View</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-md-4 ">
-						<div class="border m-1 p-3 h-100 d-flex flex-column justify-content-between align-items-stretch">
+					<div class="work-width">
+						<div class="border p-15 h-100 d-flex flex-column space-between">
 							<img src="img/mochup_landing_the_Band.png" alt="">
 							<h3 class="my-3">Landing Page from PSD</h3>
 							<div>
-								
 								<p> <strong> Tools:</strong> HTML,CSS,Bootstrap 4, Photoshop</p>
-								<p>I made this site to practice in creation site from psd maket </p>
+								<p>Simple responsive Landing page from Psd template with overlay on youtube player </p>
 							</div>
-							<div class="text-center">
-								<a class="btn btn-outline-warning" role="button" href="https://landingband.netlify.com/" target="_blank">View</a>
-								<button type="button"  class="btn btn-outline-warning " onclick="window.open('band-website-design.psd')">Download PSD</button>
+							<div class="text-center mY-15px">
+								<a class="button-style" href="https://landingband.netlify.com/" target="_blank">View</a>
+								<a class="button-style"  onclick="window.open('band-website-design.psd')">Download PSD</a>
 							</div>	
 						</div>
 					</div>
-				</div>
-				<div class="row my-4">
-					<div class="col-md-4">
-						<div class="border m-1 p-3 h-100 d-flex flex-column justify-content-between align-items-stretch">
+				
+					<div class="work-width">
+						<div class="border p-15 h-100 d-flex flex-column space-between">
 							<img src="img/mochup_ukrpravda.png" alt="">
 							<div>
 								<h3 class="my-3">The copy of the ukrainian news website</h3>
 								<p> <strong> Tools:</strong> HTML,CSS,JavaScript</p>
-								<p>One of my first sites. Later I renew it with flex-box,   respositivety to small screens, with "burger" menu and two sliders on pure javascript </p>
+								<p>One of my first sites. Later I renew it with flex-box,   respositivety to small screens, with "hamburger menu" and two sliders on pure javascript </p>
 							</div>
-							<div class="text-center">
-								<a class="btn btn-outline-warning" role="button" href="https://ukrpravda.netlify.com/" target="_blank">My copy</a>
-								<a  class="btn btn-outline-warning " href="https://pravda.com.ua" target="_blank">Original page </a>
+							<div class="text-center mY-15px">
+								<a class="button-style" href="https://ukrpravda.netlify.com/" target="_blank">My copy</a>
+								<a  class="button-style" href="https://pravda.com.ua" target="_blank">Original page </a>
 							</div>	
 						</div>
 					</div>
 				
-					<div class="col-md-4 ">
-						<div class="border m-1 p-3 h-100 d-flex flex-column justify-content-between align-items-stretch">
+					<div class="work-width">
+						<div class="border p-15 h-100 d-flex flex-column space-between">
 							<img src="img/newwebsite.png" alt="">
 							<h4 class="my-3">My other works will be added soon... </h4>
 							<p>Have a nice day...)</p>
@@ -260,20 +264,6 @@
 						
 					</div>
 
-					<!-- <div class="col-md-4 ">
-						<div class="border m-1 p-3 h-100 d-flex flex-column justify-content-between align-items-stretch">
-							<img src="img/mochup_landing_the_Band.png" alt="">
-							<div>
-								<h3 class="my-3">Landing Page from PSD</h3>
-								<p> <strong> Tools:</strong> HTML,CSS,JavaScript</p>
-								<p>One of my first sites. Later I renew it with flex-box,   respositivety to small screens, with "burger" menu and two sliders on pure javascript </p>
-							</div>
-							<div class="text-center">
-								<a class="btn btn-outline-warning" role="button" href="https://landingband.netlify.com/" target="_blank">View my copy</a>
-								<a  class="btn btn-outline-warning " href="https://pravda.com.ua" target="_blank">Original page </a>
-							</div>	
-						</div>
-					</div> -->
 				</div>
 			</div>
 
@@ -282,8 +272,8 @@
 
 		
 	<footer>
-		<div id="social" class="row setlink">
-			<ul class="list-inline mx-auto mb-0 ">
+		<div id="social" class="d-flex flex-row flex-center">
+			<ul class="d-flex flex-row ">
 				<li class="list-inline-item" >
 					<a href="https://www.linkedin.com/in/julia2k" target="_blank" title="LinkedIn">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg>
@@ -315,9 +305,9 @@
 				</li>
 			</ul>
 		</div>
-		<div class="row">
+		<div class="text-center">
 			
-				<p class="mx-auto  border-top-dotted pt-2">	made by Yuliana Kutepova, 2019</p>
+				<p class="border-top-dotted mY-15px">	made by Yuliana Kutepova, 2019</p>
 			
 			
 		</div>
@@ -325,5 +315,9 @@
 	</footer>
 </div>
 <script src="script.js"></script>	
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+
+
 </body>
 </html>

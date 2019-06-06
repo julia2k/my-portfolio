@@ -7,7 +7,98 @@ body{
 	overflow-x:hidden;
 	background:url(img/background.png);
 }
+a{
+	text-decoration: none;
+	cursor:pointer;
+}
+ul{
+	list-style: none;
+	padding-left:0;
+}
+.d-flex{
+	display:flex;
+}
+.flex-row{
+	flex-direction: row;
+}
+.flex-column{
+	flex-direction: column;
+}
+.space-between{
+	justify-content: space-between;
+}
+.flex-center{
+	justify-content: center;
+}
+.flex-start{
+	justify-content: flex-start;
+}
+.flex-align-center{
+	align-items:center;
+}
 
+.flex-wrap{
+	flex-wrap:wrap;
+}
+.d-none{
+	display:none;
+}
+.d-block{
+	display:block;
+}
+.mr-3{
+	margin-right: 15px;
+}
+.pl-3{
+	padding-left: 15px;
+}
+.mr-5{
+	margin-right: 60px;
+}
+.ml-5{
+	margin-left: 60px;
+}
+.mY-15px{
+	margin: 15px 0;
+}
+.p-15{
+	padding: 15px;
+	box-sizing: border-box;
+}
+.border{
+	border: 1px solid silver;
+}
+.container{
+	padding: 0 5vw;
+}
+.work-width{
+	width:33%;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+.h-100{
+	height: 100%;
+}
+.button-style{
+	height: 30px;
+	background: transparent;
+	border: 1px solid #ffc107;
+	color:#ffc107;
+	border-radius: 10px;
+	padding:10px;
+	font-size: 12pt;
+
+}
+.button-style:hover{
+	background: #ffc107;
+	
+	color:black;
+
+}
+.text-center{
+	text-align: center;
+}
 #main-foto{
 	background: url(img/main-foto-1.jpg) center top no-repeat;
 	z-index:99;
@@ -108,32 +199,18 @@ body{
 
 }
 
-/*#welcome-button-close-xs{
-	display:none;
-	position: absolute;
-	z-index: 100;
-	top: 3vh;
-	left: 44vw;
-	font-size: 12vw;
-	border: none;
-	outline:none;	
-	background: transparent;
-	 color: red;
-	 
-}*/
 
-.my-photo img{
-	position: relative;
-	width: 100%;
-}
 
 nav{
+	width:100%;
 	z-index:90 !important ;
 	background: black;
 	height: 15vh;
 	min-height: 35px;	
-}
+	position: fixed;
+	top:0;
 
+}
 .navbar a,
 #logo g{
 	color: white;
@@ -142,7 +219,6 @@ nav{
 .navbar a:hover{
 	color: #ffc107;
 	transition-duration: .9s;
-	
 }
 .a-link{
 	color:#ffc107 !important;
@@ -153,7 +229,6 @@ nav{
 }
 #logo svg{
 	height:90%;
-	
 }
 #logo-name{
 	border-left:1px solid white;
@@ -162,19 +237,44 @@ nav{
 #logo-name div:last-child{
 	font-size: .5em;
 }
+
+.burger{
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #ffc107;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px);
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+
+
 #wrapper{
 	font-family: 'Muli', sans-serif;
 	display:none;
 }
 #hello-block{
 	height: 100vh;
+	text-align: center;
 }
 header{
 	font-size: 1.8em;
 	margin-top: 35vh;
 	margin-bottom: 10vh;
 }
-
 header p:first-child{
 	font-size: 1.2em;
 }
@@ -183,8 +283,8 @@ header p:last-child{
 }
 #works img{
 	width: 100%;
-}
 
+}
 #works h3{
 	text-align: center;
 	font-weight: bold;
@@ -196,18 +296,15 @@ header p:last-child{
 .work-buttons{
 	flex: 0 1 auto;
 }
-.construction{
-	width:70%;
-	margin: 0 auto;
-}
+
 footer{
 	background: black;
 	color: white;
 	
 }
 #social svg{
-	margin: 3vh;
-	width:1.5vw;
+	margin: 0 3vh;
+	width:2vw;
 	fill:white;
 	
 }
@@ -215,6 +312,9 @@ footer{
 	fill:#ffc107;
 }
 .border-top-dotted{
+	display:inline-block;
+	padding: 19px 0;
+	margin:0;
  border-top: 3px dashed #000000;
   background:
    linear-gradient(#000000,#000000) padding-box,
@@ -225,37 +325,29 @@ footer{
 }
 @media only screen and (max-width: 768px) {
 	#welcome-text{
-	font-size: 6vw;
-	margin-left: 4vw;
-
-}
-	#signature{
-		width: 45vw;
-		margin-top: 100px;
-		margin-left: 15vw;
-		
-	}
-	#welcome-button-close{
-	font-size: 10vw;
-	}
-}
-@media only screen and (max-width: 768px) {
-	#welcome-text{
 	font-size: 5vw;
 	margin-left: 4vw;
-
-}
+	}
 	#signature{
 		width: 45vw;
 		margin-top: 150px;
-		margin-left: 15vw;
-		
+		margin-left: 15vw;	
 	}
+	.work-width{
+		width:100%;
+		max-width: 500px;
+		margin: 0 auto;	
+	}
+	#welcome-button-close{
+		font-size: 10vw;
+	}
+
 }
 @media only screen and (max-width: 450px) {
 	#main-foto{
 	padding-top: 28vh;
-}
+	}
+
 	#welcome-button-close{
 		right:5vw;
 		color:black;
@@ -280,7 +372,41 @@ footer{
 	.split-char:nth-child(22){
     display: block;
 	}
-		header{
+	header{
 		margin-top: 20vh;
 	}
+	#logo{
+		margin-left:15px;
+	}
+	.burger{
+		margin-right: 15px;
+	}
+	nav{
+		flex-wrap:wrap;
+		height: auto;
+		padding: 15px 0;
+	}
+	nav ul.flex-row{
+		flex-direction:column;
+		font-size:6vw;
+		margin-left:15px;
+		
+	}
+	nav li{
+		margin: 5px 0;
+	}
+	.w-xs-100{
+		width:100%;
+	}
+	.d-xs-none{
+		display:none;
+	}
+	.d-xs-block{
+		display:block;
+	}
+	#social svg{
+	width:5vw;
+	
+}
+
 }
