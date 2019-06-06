@@ -16,29 +16,46 @@ ul{
 	padding-left:0;
 }
 .d-flex{
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
 }
 .flex-row{
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 .flex-column{
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .space-between{
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .flex-center{
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .flex-start{
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 .flex-align-center{
-	align-items:center;
+	-webkit-box-align:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 }
 
 .flex-wrap{
-	flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	    flex-wrap:wrap;
 }
 .d-none{
 	display:none;
@@ -63,7 +80,8 @@ ul{
 }
 .p-15{
 	padding: 15px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 .border{
 	border: 1px solid silver;
@@ -74,7 +92,8 @@ ul{
 .work-width{
 	width:33%;
 	padding: 10px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 
 }
 .h-100{
@@ -142,6 +161,11 @@ ul{
 }
 
 /*Begin amimation of signature*/
+@-webkit-keyframes signature{
+	100%{
+		stroke-dashoffset: 0;	
+	}
+}
 @keyframes signature{
 	100%{
 		stroke-dashoffset: 0;	
@@ -152,30 +176,32 @@ ul{
 	stroke-dasharray: 1300;
 	stroke-dashoffset: 1300;
 	stroke-width: 25;
-	animation: signature .6s linear forwards 3s;
+	-webkit-animation: signature .6s linear forwards 3s;
+	        animation: signature .6s linear forwards 3s;
 	}
 #utep1,#utep2,#utep3,#utep4,#utep5,#utep6{
-	animation-duration: .4s;
+	-webkit-animation-duration: .4s;
+	        animation-duration: .4s;
 	}
-#u1{animation-delay: 3.8s;}
-#li{animation-delay: 4s;}
-#an{animation-delay: 4.3s;}
-#a2{animation-delay: 4.7s;}
-#K{animation-delay: 5.2s;}
-#K2{animation-delay: 5.6s;}
-#utep1{animation-delay: 5.75s;}
-#utep2{animation-delay: 5.85s;}
-#utep3{animation-delay: 5.95s;}
-#utep4{animation-delay: 6.05s;}
-#utep5{animation-delay: 6.15s;}
-#utep6{animation-delay: 6.25s;}
-#ova1{animation-delay: 6.6s;}
-#ova2{animation-delay: 6.75s;}
-#ova3{animation-delay: 6.9s;}
-#ova4{animation-delay: 7.05s;}
-#ova5{animation-delay: 7.2s;}
-#dot{animation-delay: 7.5s;}
-#dash{animation-delay: 7.7s;}
+#u1{-webkit-animation-delay: 3.8s;animation-delay: 3.8s;}
+#li{-webkit-animation-delay: 4s;animation-delay: 4s;}
+#an{-webkit-animation-delay: 4.3s;animation-delay: 4.3s;}
+#a2{-webkit-animation-delay: 4.7s;animation-delay: 4.7s;}
+#K{-webkit-animation-delay: 5.2s;animation-delay: 5.2s;}
+#K2{-webkit-animation-delay: 5.6s;animation-delay: 5.6s;}
+#utep1{-webkit-animation-delay: 5.75s;animation-delay: 5.75s;}
+#utep2{-webkit-animation-delay: 5.85s;animation-delay: 5.85s;}
+#utep3{-webkit-animation-delay: 5.95s;animation-delay: 5.95s;}
+#utep4{-webkit-animation-delay: 6.05s;animation-delay: 6.05s;}
+#utep5{-webkit-animation-delay: 6.15s;animation-delay: 6.15s;}
+#utep6{-webkit-animation-delay: 6.25s;animation-delay: 6.25s;}
+#ova1{-webkit-animation-delay: 6.6s;animation-delay: 6.6s;}
+#ova2{-webkit-animation-delay: 6.75s;animation-delay: 6.75s;}
+#ova3{-webkit-animation-delay: 6.9s;animation-delay: 6.9s;}
+#ova4{-webkit-animation-delay: 7.05s;animation-delay: 7.05s;}
+#ova5{-webkit-animation-delay: 7.2s;animation-delay: 7.2s;}
+#dot{-webkit-animation-delay: 7.5s;animation-delay: 7.5s;}
+#dash{-webkit-animation-delay: 7.7s;animation-delay: 7.7s;}
 /*End amimation of signature*/
 
 #welcome-button-close{
@@ -216,14 +242,18 @@ nav{
 }
 .navbar a:hover{
 	color: #ffc107;
-	transition-duration: .9s;
+	-webkit-transition-duration: .9s;
+	     -o-transition-duration: .9s;
+	        transition-duration: .9s;
 }
 .a-link{
 	color:#ffc107 !important;
 }
 .navbar a:hover path{
 	fill:white;
-	transition-duration: 1.5s;
+	-webkit-transition-duration: 1.5s;
+	     -o-transition-duration: 1.5s;
+	        transition-duration: 1.5s;
 }
 #logo svg{
 	height:90%;
@@ -245,20 +275,22 @@ nav{
   height: 3px;
   background-color: #ffc107;
   margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-8px, 5px);
-  transform: rotate(-45deg) translate(-8px, 5px);
+  -ms-transform: rotate(-45deg) translate(-8px, 5px);
+      transform: rotate(-45deg) translate(-8px, 5px);
 }
 .change .bar2 {opacity: 0;}
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-7px, -6px);
-  transform: rotate(45deg) translate(-7px, -6px);
+  -ms-transform: rotate(45deg) translate(-7px, -6px);
+      transform: rotate(45deg) translate(-7px, -6px);
 }
-
-
 
 #wrapper{
 	font-family: 'Muli', sans-serif;
@@ -289,10 +321,14 @@ header p:last-child{
 	font-style: italic;
 }
 .work-description{
-	flex: 1 1 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
 }
 .work-buttons{
-	flex: 0 1 auto;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 auto;
+	        flex: 0 1 auto;
 }
 
 footer{
@@ -314,6 +350,15 @@ footer{
 	padding: 19px 0;
 	margin:0;
  border-top: 3px dashed #000000;
+  background:
+   -webkit-gradient(linear,left top, left bottom,from(#000000),to(#000000)) padding-box,
+   -webkit-gradient(linear, left top, right top, from(#ffc107), color-stop(50%, #fff), to(#ffc107)) border-box;
+  background:
+   -webkit-linear-gradient(#000000,#000000) padding-box,
+   -webkit-linear-gradient(left, #ffc107, #fff 50%, #ffc107) border-box;
+  background:
+   -o-linear-gradient(#000000,#000000) padding-box,
+   -o-linear-gradient(left, #ffc107, #fff 50%, #ffc107) border-box;
   background:
    linear-gradient(#000000,#000000) padding-box,
    linear-gradient(to right, #ffc107, #fff 50%, #ffc107) border-box;
@@ -374,12 +419,16 @@ footer{
 		margin-right: 15px;
 	}
 	nav{
-		flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		    flex-wrap:wrap;
 		height: auto;
 		padding: 15px 0;
 	}
 	nav ul.flex-row{
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 		font-size:6vw;
 		margin-left:15px;
 		
