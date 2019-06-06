@@ -270,7 +270,7 @@ nav{
 }
 header{
 	font-size: 1.8em;
-	margin-top: 25vh;
+	margin-top: 30vh;
 	margin-bottom: 10vh;
 }
 header p:first-child{
@@ -365,7 +365,7 @@ footer{
     display: block;
 	}
 	header{
-		margin-top: 20vh;
+		margin-top: 18vh;
 	}
 	#logo{
 		margin-left:15px;
