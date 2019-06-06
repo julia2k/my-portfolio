@@ -392,7 +392,7 @@ footer{
 }
 @media only screen and (max-width: 450px) {
 	#main-foto{
-	padding-top: 20vh;
+	padding-top: 16vh;
 	}
 	#welcome-button-close{
 		bottom: 20vh;
@@ -400,7 +400,7 @@ footer{
 	}
 	#signature{
 		width: 75vw;
-		margin-top: 5vh;
+		margin-top: 15vh;
 		margin-left: 5vw;
 	}
 	#welcome-text{
