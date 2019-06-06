@@ -392,7 +392,7 @@ footer{
 }
 @media only screen and (max-width: 450px) {
 	#main-foto{
-	padding-top: 28vh;
+	padding-top: 20vh;
 	}
 	#welcome-button-close{
 		bottom: 20vh;
