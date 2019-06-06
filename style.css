@@ -136,8 +136,8 @@ ul{
 }
 #signature{
 	width: 25vw;
-	margin-top: 150px;
-	margin-left: 15vw;
+	margin-top: 100px;
+	margin-left: 18vw;
 	
 }
 
@@ -182,20 +182,18 @@ ul{
 	position: absolute;
 	z-index: 100;
 	overflow:hidden;
-	top: 1vh;
-	right: 1vw;
-	font-size: 6vw;
+	bottom: 10vh;
+	left: 3vw;
+	font-size: 1.8vw;
 	border: none;
 	outline:none;	
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	 background-clip: text;
-	 color: transparent;
-  
+	 color: black; 
 	}
-
 #welcome-button-close:hover{
-	color:  #ebebe0;
+	color:  #ffc107;
 
 }
 
@@ -272,7 +270,7 @@ nav{
 }
 header{
 	font-size: 1.8em;
-	margin-top: 35vh;
+	margin-top: 30vh;
 	margin-bottom: 10vh;
 }
 header p:first-child{
@@ -324,7 +322,7 @@ footer{
 	
 }
 @media only screen and (max-width: 768px) {
-	#welcome-text{
+	/*#welcome-text{
 	font-size: 5vw;
 	margin-left: 4vw;
 	}
@@ -332,35 +330,29 @@ footer{
 		width: 45vw;
 		margin-top: 150px;
 		margin-left: 15vw;	
+	}*/
+	#logo {
+		margin-left:3vw;
+	}
+	#navLinks li.mr-5{
+		margin-right:3vw;
 	}
 	.work-width{
 		width:100%;
 		max-width: 500px;
 		margin: 0 auto;	
 	}
-	#welcome-button-close{
-		font-size: 10vw;
-	}
+	
 
 }
 @media only screen and (max-width: 450px) {
 	#main-foto{
 	padding-top: 28vh;
 	}
-
 	#welcome-button-close{
-		right:5vw;
-		color:black;
-		
+		bottom: 20vh;
+		font-size: 3vh;	
 	}
-	#welcome-button-close span{
-		display:none;
-	}
-	#welcome-button-close:after{
-		content: '\002716';
-		font-size: 8vw;
-	}	
-
 	#signature{
 		width: 75vw;
 		margin-top: 5vh;
